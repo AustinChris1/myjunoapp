@@ -15,11 +15,16 @@ jobs:
         with:
           node-version: "18"
 
+      - name: Setup pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@8.5.1 --activate
+
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Deploy to Juno
         uses: junobuild/juno-action@main
