@@ -1,7 +1,5 @@
 name: Deploy to Juno
 
-environment: actions
-
 on:
   push:
     branches: [main]
