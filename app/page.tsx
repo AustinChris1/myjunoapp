@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { type Doc, initJuno, setDoc } from "@junobuild/core-peer";
 
+// let tim cook
+
 type Record = {
   hello: string;
 };
